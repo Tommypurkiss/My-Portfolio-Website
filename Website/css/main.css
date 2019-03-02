@@ -107,13 +107,13 @@ table, th, td {
 }
 
 .divProjects {
-    height: 800px;
+    height: 1500px;
     margin-top: -65px;
     background-color: #005884;
     border-top-left-radius: 25px;
     border-top-right-radius: 25px;
 }
-.divProjects #projects {
+.divProjects #projectsTitle {
     text-align: right;
     margin: 25px 25px 0 0;
     padding-top: 10px;
@@ -130,16 +130,40 @@ table, th, td {
 }
 .project1 {
     margin-top: 40px;
-    height: 400px;
+    height: 600px;
     width: 300px;
     display: inline-block;
+    border: 1px solid black;
 }
 .project1 #onlynoteimg {
-    margin-top: 10px;
+    padding-top: 10px;
     max-width: 60%;
+}
+
+.project1info {
+    padding-top: 20px;
 }
 #onlynoteplaybadge {
     max-width: 35%;
+}
+
+.project2 {
+    margin-top: 40px;
+    padding-top: 40px;
+    height: 600px;
+    width: 300px;
+    display: inline-block;
+    border: 1px solid black;
+
+}
+
+.project2 #newproject {
+    margin-top: 10px;
+    max-width: 60%;
+
+}
+.project2info {
+    padding-top: 20px;
 }
 
 
@@ -270,7 +294,7 @@ MARK: - DESIGN FOR TABLET DEVICES
     }
 
     .divProjects {
-        height: 900px;
+        height: 2000px;
         margin-top: -65px;
         background-color: #005884;
         border-top-left-radius: 25px;
@@ -293,16 +317,27 @@ MARK: - DESIGN FOR TABLET DEVICES
     }
     .project1 {
         margin-top: 50px;
-        height: 400px;
-        width: 300px;
+        height: 900px;
+        width: 500px;
         display: inline-block;
     }
     .project1 #onlynoteimg {
-        margin-top: 40px;
+        padding-top: 40px;
         max-width: 70%;
     }
     #onlynoteplaybadge {
         max-width: 45%;
+    }
+
+    .project2 {
+        margin-top: 50px;
+        height: 900px;
+        width: 500px;
+        display: inline-block;
+    }
+    .project1 #newproject {
+        padding-top: 40px;
+        max-width: 70%;
     }
 
     .divContact {
@@ -403,7 +438,7 @@ MARK: - DESIGN FOR DESKTOP DEVICES
     }
 
     .divWelcome1 #timeGreeting {
-        padding-left: 150px;
+        padding-left: 100px;
         font-family: 'Anton', sans-serif;
         font-size: 88px;
         color: white;
@@ -512,11 +547,13 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 
 
     .divProjects {
-        height: 1200px;
+        height: 2400px;
         border: 1px solid black;
+        border-radius: 0px;
+
         margin: 0;
     }
-    .divProjects #projects {
+    .divProjects #projectsTitle {
         font-size: 42px;
         padding: 35px 35px;
         font-family: 'Raleway', sans-serif; 
@@ -534,6 +571,20 @@ MARK: - DESIGN FOR DESKTOP DEVICES
         float: right;
         padding-top: 25%;
     }
+    
+    .project2 {
+        width: 1000px;
+    }
+    .project2img {
+        width: 50%;
+        float: right;
+    }
+    .project2info {
+        width: 50%;
+        float: left;
+        padding-top: 25%;
+    }
+
 
 
     .divContact {
