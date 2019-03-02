@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Tommy Purkiss - App Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+
+
+    <script src="js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        //JQuery - Function to enable smooth scrolling across browsers
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+      
+        if (this.hash !== "") {
+            event.preventDefault();
+      
+            var hash = this.hash;
+      
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 300, function() {
+              window.location.hash = hash;
+            });
+          } 
+        });
+      });
+
+    </script>
+</head>
+
+<body>
+
+
+
+    <div class="wrapper">
+        
+        <div class="divMain">
+        <nav>
+            <ul>
+                <li><a href="#divAbout">About</a></li>
+                <li><a href="#divProjects">Projects</a></li>
+                <li><a href="#divContact">Contact</a></li>
+            </ul>
+        </nav>
+
+
+        <div class="divWelcome">
+            <div class="divWelcome1" id="divWelcome1">
+                
+                <p id="timeGreeting">
+                    <script>timeGreeting()</script>
+                </p>
+            </div>
+            <div class="divWelcome2" id="divWelcome2">
+                <p id="name">
+                    I'm Tommy and I'm a Developer.
+                </p>
+                <br>
+                <p>
+                    I focus on Mobile App Development with a bit of Web Development on the side.
+                </p>
+                <img src="images/IMG_0044.JPG" alt="my bitmoji" class="my-bitmoji">
+            </div>
+        </div>
+</div>
+
+
+        <div class="mainContentWrapper">
+
+        <div class="divAbout" id="divAbout">
+            <h2 id="aboutMe">About Me</h2>
+            <div class="divAboutContent" id="divAboutContent">
+                <div class="divAboutInfo">
+                    <div class="divAboutInfoContent">
+                <p id="p1">
+                    Located in London, UK.
+                </p>
+                <br>
+                <p id="p2">
+                    I like to work on creating cool Mobile Applications. 
+                </p>
+                <br>
+                <p id="p3">
+                    The tools I use are Mac and a Windows PC.
+                </p>
+                </div>
+            </div> 
+
+            <div class="divTable">
+                <div class="divTableContent">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="images/Mobile.png" alt="mobile" id="imgMobile">
+                        </td>
+                        <td>
+                            <img src="images/Monitor.png" alt="monitor" id="imgMonitor">
+                        </td>
+                    </tr>
+                    <tr>
+                        <th id="thMobile">
+                            Mobile
+                        </th>
+                        <th id="thMonitor">
+                            Web
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>
+                            Java (Android)
+                        </td>
+                        <td>
+                            HTML5
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Kotlin
+                        </td>
+                        <td>
+                            CSS3
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Swift
+                        </td>
+                        <td>
+                            JavaScript (Vanilla & JQuery) 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            Other
+                        </th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            Java (Non Android)
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            C#
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="divProjects" id="divProjects">
+            <h2 id="projects">My Projects</h2>
+            <div class="divProjectsContent" id="divProjectsContent">
+                <div class="project1">
+                    <div class="project1img">
+                        <img src="images/onlynotephoneimg.png" alt="" id="onlynoteimg">
+                    </div>
+                    
+                    <div class="project1info">
+                            
+                        <p>
+                            Onlynote is my first mobile application project.
+                            <br>
+                            It is a basic note taking application available for Android.
+                        </p>
+                        <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes">
+                            <img src="images/google-play-badge.png" alt="" id="onlynoteplaybadge">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="divContact" id="divContact">
+            <h2 id="contact">Contact Me</h2>
+            <div class="divSocial">
+                <a href="https://github.com/Tommypurkiss" target="_blank">Github</a>
+                <a href="https://www.linkedin.com/in/tommy-purkiss-498a56159/" target="_blank">LinkedIn</a>
+                <a href="https://www.instagram.com/t.dev1/?hl=en" target="_blank">Instagram</a>
+                <a href="mailto:tommypurkissdev@gmail.com">Email</a>
+                <a href="https://play.google.com/store/apps/developer?id=TommyPurkissDev" target="_blank">PlayStore</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<!-- MARK: - SPARE CODE 
+
+    <li><a href="#">Home</a></li>
+
+-->
