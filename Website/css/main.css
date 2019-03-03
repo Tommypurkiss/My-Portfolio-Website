@@ -519,7 +519,7 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 
     /* Right Side */
     .divTable {
-        margin: 30px 0 0 0;
+        margin: 60px 0 0 0;
         padding: 10px;
         border: 1px solid black;
         height: 500px;
