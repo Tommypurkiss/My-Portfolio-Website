@@ -14,27 +14,8 @@
 
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        
-        //JQuery - Function to enable smooth scrolling across browsers
-        $(document).ready(function(){
-        $("a").on('click', function(event) {
-      
-        if (this.hash !== "") {
-            event.preventDefault();
-      
-            var hash = this.hash;
-      
-            $('html, body').animate({
-              scrollTop: $(hash).offset().top
-            }, 300, function() {
-              window.location.hash = hash;
-            });
-          } 
-        });
-      });
 
-    </script>
+
 </head>
 
 <body>
@@ -43,7 +24,6 @@
 
     <div class="wrapper">
         
-        <div class="divMain">
         <nav>
             <ul>
                 <li><a href="#divAbout">About</a></li>
@@ -52,7 +32,7 @@
             </ul>
         </nav>
 
-
+        <div class="divMain">
         <div class="divWelcome">
             <div class="divWelcome1" id="divWelcome1">
                 
@@ -80,7 +60,7 @@
             <h2 id="aboutMe">About Me</h2>
             <div class="divAboutContent" id="divAboutContent">
                 <div class="divAboutInfo">
-                    <div class="divAboutInfoContent">
+                    <div class="divAboutInfoContent" data-aos="fade-right">
                 <p id="p1">
                     Located in London, UK.
                 </p>
