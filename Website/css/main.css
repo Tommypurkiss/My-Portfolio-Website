@@ -504,6 +504,7 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 		margin-top: 50px;
 	}
 
+
 	.divAbout {
 		height: 1300px;
 		margin: 0;
@@ -512,6 +513,15 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 		color: #000;
 		border-radius: 0px;
 	}
+	
+	.div-line {
+		margin: 0 auto;
+		border-top: 1px solid black;
+		border-bottom: 1px solid black;
+		height: 20px;
+		width: 90%;
+	}
+
 	.divAbout #aboutMe {
 		text-align: center;
 		font-size: 42px;
