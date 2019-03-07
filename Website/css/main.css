@@ -5,6 +5,7 @@
 html,
 body {
 	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: smooth;
 }
 
 /* 
@@ -110,7 +111,7 @@ td {
 }
 
 .divProjects {
-	height: 1500px;
+	height: 1300px;
 	margin-top: -65px;
 	background-color: #005884;
 	border-top-left-radius: 25px;
@@ -132,11 +133,11 @@ td {
 	text-align: center;
 }
 .project1 {
-	margin-top: 40px;
+	margin: 0;
+	padding-top: 40px;
 	height: 600px;
 	width: 300px;
 	display: inline-block;
-	border: 1px solid black;
 }
 .project1 #onlynoteimg {
 	padding-top: 10px;
@@ -151,12 +152,10 @@ td {
 }
 
 .project2 {
-	margin-top: 40px;
 	padding-top: 40px;
 	height: 600px;
 	width: 300px;
 	display: inline-block;
-	border: 1px solid black;
 }
 
 .project2 #newproject {
@@ -312,7 +311,7 @@ MARK: - DESIGN FOR TABLET DEVICES
 	}
 	.project1 {
 		margin-top: 50px;
-		height: 900px;
+		height: 700px;
 		width: 500px;
 		display: inline-block;
 	}
@@ -325,12 +324,11 @@ MARK: - DESIGN FOR TABLET DEVICES
 	}
 
 	.project2 {
-		margin-top: 50px;
-		height: 900px;
+		height: 700px;
 		width: 500px;
 		display: inline-block;
 	}
-	.project1 #newproject {
+	.project2 #newproject {
 		padding-top: 40px;
 		max-width: 70%;
 	}
@@ -368,6 +366,10 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 	body,
 	html {
 		height: 100%;
+	}
+
+	.wrapper {
+		height: 100vh;
 	}
 
 	nav {
@@ -414,6 +416,7 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 		justify-content: center;
 		animation: fadein 3s;
 	}
+
 	@keyframes fadein {
 		from {
 			opacity: 0;
@@ -502,44 +505,43 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 	}
 
 	.divAbout {
-		height: 1500px;
+		height: 1300px;
 		margin: 0;
+		padding-top: 100px;
 		background-color: #fff;
 		color: #000;
-		border: 1px solid black;
 		border-radius: 0px;
 	}
 	.divAbout #aboutMe {
+		text-align: center;
 		font-size: 42px;
-		padding: 70px 0 30px 50px;
+		padding-top: 30px;
 		margin: 0;
 		font-family: 'Raleway', sans-serif;
 		color: #000;
-		border: 1px solid black;
 	}
 
 	.divAboutContent {
-		margin: 0;
+		margin: auto;
 		padding-top: 80px;
 		color: #000;
-		border: 1px solid black;
-		height: 1100px;
+		height: 1000px;
+
 	}
 	/* Left Side */
 
 	.divAboutInfo {
-		margin: 0;
 		padding: 10px;
-		border: 1px solid black;
 		height: 500px;
+
 	}
 	.divAboutInfoContent {
-		border: 1px solid black;
 		padding: 10px;
+		margin: auto;
 		height: 450px;
-		width: 500px;
-		float: left;
+		width: 700px;
 		border-radius: 25px;
+		background-color: lightgray;
 	}
 	.divAboutInfoContent p {
 		padding-top: 20px;
@@ -547,17 +549,17 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 
 	/* Right Side */
 	.divTable {
-		margin: 60px 0 0 0;
+		margin: auto;
 		padding: 10px;
-		border: 1px solid black;
 		height: 500px;
-	}
+}
 	.divTableContent {
-		border: 1px solid black;
+		margin: auto;
 		padding: 10px;
 		width: 700px;
-		float: right;
 		border-radius: 25px;
+		background-color: lightgray;
+
 	}
 	#imgMonitor,
 	#imgMobile {
@@ -577,13 +579,13 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 	}
 
 	.divProjects {
-		height: 2400px;
-		border: 1px solid black;
+		height: 2000px;
 		border-radius: 0px;
 
 		margin: 0;
 	}
 	.divProjects #projectsTitle {
+		text-align: center;
 		font-size: 42px;
 		padding: 35px 35px;
 		font-family: 'Raleway', sans-serif;
@@ -591,6 +593,8 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 
 	.project1 {
 		width: 1000px;
+		animation: fadein 3s;
+
 	}
 	.project1img {
 		width: 50%;
@@ -604,6 +608,8 @@ MARK: - DESIGN FOR DESKTOP DEVICES
 
 	.project2 {
 		width: 1000px;
+		animation: fadein 3s;
+
 	}
 	.project2img {
 		width: 50%;

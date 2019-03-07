@@ -14,7 +14,29 @@
 
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
+    <script>
+    
+        //JQuery - Function to enable smooth scrolling across browsers
+        $(document).ready(function() {
+            $('a').on('click', function(event) {
+                if (this.hash !== '') {
+                    event.preventDefault();
+        
+                    var hash = this.hash;
+        
+                    $('html, body').animate(
+                        {
+                            scrollTop: $(hash).offset().top
+                        },
+                        300,
+                        function() {
+                            window.location.hash = hash;
+                        }
+                    );
+                }
+            });
+        });
+            </script>
 
 </head>
 
@@ -23,7 +45,6 @@
 
 
     <div class="wrapper">
-        
         <nav>
             <ul>
                 <li><a href="#divAbout">About</a></li>
@@ -53,14 +74,13 @@
         </div>
 </div>
 
-
         <div class="mainContentWrapper">
 
         <div class="divAbout" id="divAbout">
             <h2 id="aboutMe">About Me</h2>
             <div class="divAboutContent" id="divAboutContent">
                 <div class="divAboutInfo">
-                    <div class="divAboutInfoContent" data-aos="fade-right">
+                    <div class="divAboutInfoContent">
                 <p id="p1">
                     Located in London, UK.
                 </p>
@@ -71,6 +91,10 @@
                 <br>
                 <p id="p3">
                     The tools I use are Mac and a Windows PC.
+                </p>
+                <br>
+                <p id="p4">
+                    The languages I have worked with are shown below.
                 </p>
                 </div>
             </div> 
@@ -150,7 +174,7 @@
             <div class="divProjectsContent" id="divProjectsContent">
                 <div class="project1">
                     <div class="project1img">
-                        <img src="images/onlynotephoneimg.png" alt="" id="onlynoteimg">
+                        <img src="images/onlynotephoneimg.png" alt="onlynote image" id="onlynoteimg">
                     </div>
                     
                     <div class="project1info">
@@ -160,8 +184,17 @@
                             <br>
                             It is a basic note taking application available for Android.
                         </p>
-                        <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes">
-                            <img src="images/google-play-badge.png" alt="" id="onlynoteplaybadge">
+                        <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes" >
+                            <img src="images/google-play-badge.png" alt="" id="onlynoteplaybadge" target="_blank">
+                        </a>
+                        <br>
+                        <br>
+                        <p>
+                            View the code on GitHub!
+                        </p>
+                        <br>
+                        <a href="https://github.com/Tommypurkiss/Onlynote-application" >
+                            <img src="images/GitHub-Mark-64px.png" alt="github link" target="_blank">
                         </a>
                     </div>
                 </div>
