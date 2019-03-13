@@ -128,7 +128,7 @@ section.section-one {
 /* Section two ABOUT --------------- */
 
 section.section-two {
-	height: 1400px;
+	height: 1600px;
 	width: 100%;
 	margin: 0;
 	padding: 0;
@@ -158,17 +158,15 @@ section.section-two {
 	font-size: 20px;
 	padding: 20px;
 	text-align: center;
-
 }
-.lang-list-div {
+.languages-list {
 	height: 300px;
 	width: 90%;
 	margin: auto;
+	margin-top: 130px;
 	font-size: 20px;
 	padding: 20px;
-	margin-top: 130px;
 	text-align: center;
-
 }
 
 /* Section three PROJECTS --------------- */
@@ -306,13 +304,13 @@ section.section-four {
 		padding: 20px;
 		text-align: center;
 	}
-	.lang-list-div {
+	.languages-list {
 		height: 300px;
 		width: 90%;
 		margin: auto;
+		margin-top: 100px;
 		font-size: 20px;
 		padding: 20px;
-		margin-top: 100px;
 		text-align: center;
 	}
 
@@ -391,16 +389,15 @@ section.section-four {
 		padding: 20px;
 		text-align: center;
 	}
-	.lang-list-div {
+	.languages-list {
 		height: 300px;
 		width: 90%;
 		margin: auto;
+		margin-top: 100px;
 		font-size: 18px;
 		padding: 20px;
-		margin-top: 100px;
 		text-align: center;
 	}
-
 
 	section.section-three {
 		height: 1200px;
@@ -523,18 +520,18 @@ section.section-four {
 		height: 450px;
 		width: 90%;
 		margin: auto;
-		margin-top: 110px;
+		margin-top: 130px;
 		font-size: 16px;
 		padding: 20px;
 		text-align: center;
 	}
-	.lang-list-div {
-		height: 300px;
+	.languages-list {
+		height: 450px;
 		width: 90%;
 		margin: auto;
+		margin-top: 130px;
 		font-size: 16px;
 		padding: 20px;
-		margin-top: 110px;
 		text-align: center;
 	}
 
@@ -576,7 +573,7 @@ section.section-four {
 		padding: 20px 10px 0px;
 		font-size: 14px;
 	}
-
+}
 
 
 /* Screen rotation issues ------------------------- */
