@@ -1,0 +1,491 @@
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Quicksand', sans-serif;
+	scroll-behavior: smooth;
+}
+
+/* Global --------------- */
+
+p,
+h1,
+h2 {
+	padding: 0;
+	margin: 0;
+}
+h1 {
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #0096e1;
+}
+
+/* Nav --------------- */
+
+nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	padding: 10px 100px;
+	box-sizing: border-box;
+	transition: 0.3s;
+	display: block;
+}
+nav.black {
+	background: rgba(0, 0, 0, 0.8);
+	height: 100px;
+	padding: 10px 100px;
+}
+nav ul {
+	list-style: none;
+	float: right;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+nav ul li {
+	list-style: none;
+	display: inline;
+}
+nav ul li a {
+	line-height: 80px;
+	color: #151515;
+	padding: 12px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.3s;
+	margin: 0;
+}
+nav.black ul li a {
+	color: #ffffff;
+}
+nav ul li a:focus {
+	outline: none;
+}
+a:after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+a:hover:after {
+	width: 100%;
+	background: #151515;
+}
+.black a:after {
+	content: '';
+	display: block;
+	height: 1px;
+	width: 0;
+	background: transparent;
+	transition: width .5s ease, background-color .5s ease;
+}
+.black a:hover:after {
+	width: 100%;
+	background: #fff;
+}
+
+
+
+/* Section one HOME --------------- */
+
+section.section-one {
+	width: 100%;
+	height: 100vh;
+}
+.section-one-content {
+	position: relative;
+	top: 40%;
+	text-align: center;
+	width: 100%;
+	margin: auto;
+}
+#p-one {
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-size: 52px;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+}
+#p-two {
+	font-family: 'Quicksand', sans-serif;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 0.3em;
+	font-weight: lighter;
+	padding: 0;
+	margin: 0;
+}
+
+/* Section two ABOUT --------------- */
+
+section.section-two {
+	height: 1000px;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+
+}
+.section-two-content {
+	padding: 130px 0 50px 0;
+	margin: 0;
+	font-family: 'Quicksand', sans-serif;
+}
+.fade {
+	opacity: 1;
+}
+.about-info {
+	padding: 20px;
+	height: 200px;
+	width: 90%;
+	margin: auto;
+	text-align: left;
+	font-size: 20px;
+	text-align: center;
+
+}
+.my-skills {
+	height: 450px;
+	width: 90%;
+	margin: auto;
+	margin-top: 50px;
+	text-align: left;
+	font-size: 20px;
+	padding: 20px;
+	text-align: center;
+
+}
+.lang-list {
+	text-decoration: none;
+	list-style: none;
+}
+
+/* Section three PROJECTS --------------- */
+
+section.section-three {
+	height: 1500px;
+	margin: 0;
+	padding: 0;
+	background-color: #151515;
+	border: 1px solid black;
+}
+
+.section-three-content {
+	margin-top: 130px;
+}
+.section-three-content h1 {
+	text-align: center;
+	font-size: 34px;
+	width: 500px;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+.project-one {
+	padding: 120px 0 0 0;
+	height: 900px;
+	width: 100%;
+	margin: auto;
+
+}
+.project-one-img {
+	margin: auto;
+	height: 700px;
+    width: 1200px;
+    opacity: 1;
+	transition: .3s ease;
+
+}
+.project-one-img #img-one {
+	max-width: 100%;
+	height: auto;
+}
+.project-one-img:hover {
+    opacity: 0.4;
+}
+.project-one-img p,
+a {
+	text-align: center;
+	padding-top: 10px;
+	color: #ffffff;
+	font-size: 20px;
+}
+.div-line {
+	margin: auto;
+	width: 80%;
+	border-top: 3px solid #ffffff;
+}
+
+.project-two {
+	margin-top: 100px;
+}
+.project-two h1 {
+	padding: 50px 0px;
+}
+
+/* Section four CONTACT --------------- */
+
+section.section-four {
+	border-top: 1px solid #ffffff;
+	height: 200px;
+	padding: 0;
+	margin: 0;
+	background-color: #151515;
+}
+.section-four-content h1 {
+	text-align: center;
+    font-size: 34px;
+    padding-top: 20px;
+	width: 500px;
+	margin: auto;
+	font-family: 'Roboto', sans-serif;
+}
+.social-list {
+	width: 100%;
+	height: 100px;
+	margin: auto;
+	display: inline-block;
+	text-align: center;
+}
+.social-list a {
+	text-decoration: none;
+	display: inline-block;
+	padding: 40px 20px 0px;
+}
+.social-list a:hover {
+    color: #777777;
+    transition: .3s ease;
+
+}
+
+
+
+
+
+
+/* ipad pro tablet screen ------------------------- */
+
+@media only screen and (max-width: 1024px) {
+
+
+	.about-info {
+		padding: 20px;
+		height: 200px;
+		width: 700px;
+		margin: auto;
+		text-align: left;
+		font-size: 20px;
+		text-align: center;
+	}
+	.my-skills {
+		height: 450px;
+		width: 700px;
+		margin: auto;
+		margin-top: 50px;
+		text-align: left;
+		font-size: 20px;
+		padding: 20px;
+		text-align: center;
+	}
+	.project-one {
+		padding: 120px 0 0 0;
+		height: 750px;
+		width: 900px;
+		margin: auto;
+	}
+	.project-one-img {
+		margin: auto;
+		height: 700px;
+		width: 900px;
+		opacity: 1;
+		transition: .3s ease;
+	}
+
+}
+
+/* ipad tablet screen ------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+	section.section-three {
+		height: 1200px;
+		margin: 0;
+		padding: 0;
+		background-color: #151515;
+	}
+
+	.project-one {
+		padding: 120px 0 0 0;
+		height: 550px;
+		width: 700px;
+		margin: auto;
+	}
+	.project-one-img {
+		margin: auto;
+		height: 500px;
+		width: 700px;
+		opacity: 1;
+		transition: .3s ease;
+	}
+}
+
+
+
+
+/* mobile  screen ------------------------- */
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+	nav {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100px;
+		padding: 10px 10px;
+		box-sizing: border-box;
+		transition: 0.3s;
+		display: block;
+	
+	}
+	nav.black {
+		background: rgba(0, 0, 0, 0.8);
+		height: 100px;
+		padding: 10px 10px;
+	}
+
+	nav ul {
+		list-style: none;
+		margin: auto;
+		width: 90%;
+		padding: 0;
+		text-align: center;
+
+	}
+
+	nav ul li {
+		list-style: none;
+		display: inline;
+		margin: auto;
+	}
+	nav ul li a {
+		line-height: 80px;
+		color: #151515;
+		padding: 6px 6px;
+		text-decoration: none;
+		text-transform: uppercase;
+		transition: 0.3s;
+		margin: 0;
+		font-size: 12px;
+	}
+
+
+
+
+
+	#p-one {
+		font-family: 'Quicksand', sans-serif;
+		text-transform: uppercase;
+		font-size: 26px;
+		font-weight: lighter;
+		width: 300px;
+		margin: auto;	
+	}
+
+	#p-two {
+		font-family: 'Quicksand', sans-serif;
+		text-transform: uppercase;
+		font-size: 16px;
+		letter-spacing: 0.3em;
+		font-weight: lighter;
+		width: 300px;
+		margin: auto;	
+
+	}
+
+
+	section.section-two {
+		height: 900px;
+	}
+	.about-info {
+		padding: 20px;
+		height: 200px;
+		width: 300px;
+		font-size: 16px;
+	}
+	.my-skills {
+		height: 550px;
+		width: 300px;
+		margin-top: 50px;
+		font-size: 16px;
+		padding: 10px;
+	}
+
+	section.section-three {
+		margin-top: 110px;
+		height: 800px;
+	}
+
+	.section-three-content h1 {
+		text-align: center;
+		font-size: 22px;
+		width: 200px;
+	}
+	.project-one {
+		padding: 60px 0 0 0;
+		height: 370px;
+		width: 310px;
+	}
+	.project-one-img {
+		height: 300px;
+		width: 305px;
+	}
+	.project-two {
+		margin-top: 50px;
+	}
+
+	section.section-four {
+		height: 200px;
+	}
+	.section-four-content h1 {
+		font-size: 22px;
+		width: 200px;
+	}
+	social-list {
+		height: 150px;
+	}
+	.social-list a {
+		padding: 20px 10px 0px;
+		font-size: 14px;
+	}
+
+
+
+
+
+
+
+
+/* MARK: - SPARE CODE
+
+font-family: 'Roboto', sans-serif;
+
+
+#1f1b1b
+    background-color: rgba(31, 27, 27, 0.3);
+
+
+
+
+*/

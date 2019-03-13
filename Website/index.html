@@ -1,237 +1,177 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Tommy Purkiss - App Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
-
-
-    <script src="js/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
     
-        //JQuery - Function to enable smooth scrolling across browsers
-        $(document).ready(function() {
-            $('a').on('click', function(event) {
-                if (this.hash !== '') {
-                    event.preventDefault();
-        
-                    var hash = this.hash;
-        
-                    $('html, body').animate(
-                        {
-                            scrollTop: $(hash).offset().top
-                        },
-                        300,
-                        function() {
-                            window.location.hash = hash;
-                        }
-                    );
-                }
-            });
-        });
-            </script>
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
+   
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
+    
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+
+    <!-- JQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script text="text/javascript">
+    $(window).on('scroll', function(){
+        if($(window).scrollTop()) {
+            $('nav').addClass('black');
+
+        } else {
+            $('nav').removeClass('black');
+        }
+    });
+    </script>
+    <script>
+    $(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    $(".fade").each(function() {
+      /* Check the location of each desired element */
+      var objectBottom = $(this).offset().top + $(this).outerHeight();
+      
+      /* If the element is completely within bounds of the window, fade it in */
+      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+        if ($(this).css("opacity")==0) {$(this).fadeTo(250,1);}
+      } else { //object goes out of view (scrolling up)
+        if ($(this).css("opacity")==1) {$(this).fadeTo(250,0);}
+      }
+    });
+  }).scroll(); //invoke scroll-handler on page-load
+});
+    </script>
 </head>
-
 <body>
 
-
-
     <div class="wrapper">
+
+        <!-- Nav bar-->
         <nav>
+            
             <ul>
-                <li><a href="#divAbout">About</a></li>
-                <li><a href="#divProjects">Projects</a></li>
-                <li><a href="#divContact">Contact</a></li>
+                <li class="li-one"><a href="#home">Home</a></li>
+                <li class="li-two"><a href="#about">About</a></li>
+                <li class="li-three"><a href="#work">Work</a></li>
+                <li class="li-four"><a href="#contact">Contact</a></li>
             </ul>
         </nav>
 
-        <div class="divMain">
-        <div class="divWelcome">
-            <div class="divWelcome1" id="divWelcome1">
+        <!-- SECTION ONE HOME -->
+        <section class="section-one" id="home">
+            <div class="section-one-content">
+                <p id="p-one">
+                    Hey, I'm Tommy 
+                </p>
+                <br>
+                <p id="p-two">
+                    and I'm a developer.
+                </p>
                 
-                <p id="timeGreeting">
-                    <script>timeGreeting()</script>
-                </p>
             </div>
-            <div class="divWelcome2" id="divWelcome2">
-                <p id="name">
-                    I'm Tommy and I'm a Developer.
-                </p>
-                <br>
-                <p>
-                    I focus on Mobile App Development with a bit of Web Development on the side.
-                </p>
-                <img src="images/IMG_0044.JPG" alt="my bitmoji" class="my-bitmoji">
-            </div>
-        </div>
-</div>
+        </section>
 
-        <div class="mainContentWrapper">
-
-            
-        <div class="divAbout" id="divAbout">
-            <div class="div-line"></div>
-            <h2 id="aboutMe">About Me</h2>
-            <div class="divAboutContent" id="divAboutContent">
-                <div class="divAboutInfo">
-                    <div class="divAboutInfoContent">
-                <p id="p1">
-                    Located in London, UK.
-                </p>
-                <br>
-                <p id="p2">
-                    I like to work on creating cool Mobile Applications. 
-                </p>
-                <br>
-                <p id="p3">
-                    The tools I use are Mac and a Windows PC.
-                </p>
-                <br>
-                <p id="p4">
-                    The languages I have worked with are shown below.
-                </p>
-                </div>
-            </div> 
-
-            <div class="divTable">
-                <div class="divTableContent">
-                <table>
-                    <tr>
-                        <td>
-                            <img src="images/Mobile.png" alt="mobile" id="imgMobile">
-                        </td>
-                        <td>
-                            <img src="images/Monitor.png" alt="monitor" id="imgMonitor">
-                        </td>
-                    </tr>
-                    <tr>
-                        <th id="thMobile">
-                            Mobile
-                        </th>
-                        <th id="thMonitor">
-                            Web
-                        </th>
-                    </tr>
-                    <tr>
-                        <td>
-                            Java (Android)
-                        </td>
-                        <td>
-                            HTML5
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Kotlin
-                        </td>
-                        <td>
-                            CSS3
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            Swift
-                        </td>
-                        <td>
-                            JavaScript (Vanilla & JQuery) 
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
+        <!-- SECTION TWO ABOUT -->
+        <section class="section-two" id="about">
+            <div class="section-two-content">
+                    <div class="about-info fade">
+                            <h1>About me!</h1> 
                             <br>
-                        </td>
-                    </tr>
-                    <tr>
-                        <th colspan="2">
-                            Other
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            Java (Non Android)
-                        </td>
-                    </tr>
-                    <tr>
-                        <td colspan="2">
-                            C#
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            </div>
-            </div>
-        </div>
-
-
-        <div class="divProjects" id="divProjects">
-            <h2 id="projectsTitle">My Projects</h2>
-            <div class="divProjectsContent" id="divProjectsContent">
-                <div class="project1">
-                    <div class="project1img">
-                        <img src="images/onlynotephoneimg.png" alt="onlynote image" id="onlynoteimg">
-                    </div>
-                    
-                    <div class="project1info">
-                            
-                        <p>
-                            Onlynote is my first mobile application project.
+                            <p>
+                                I'm an aspiring mobile app developer based in London, UK.
+                            </p>
                             <br>
-                            It is a basic note taking application available for Android.
-                        </p>
-                        <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes" >
-                            <img src="images/google-play-badge.png" alt="" id="onlynoteplaybadge" target="_blank">
-                        </a>
-                        <br>
-                        <br>
+                            <p>
+                                I'm passionate about designing and creating cool mobile apps for Android and iOS.
+                            </p>
+                        </div>
+                        <div class="my-skills fade">
+                            <h1>What can I do?</h1>
+                            <br>    
+                                <p >
+                                    I am capable of creating Android/iOS applications using Java/Swift as my 
+                                    languages of choice.
+                                </p>
+                                <br>
+                                <p >
+                                    Design is essential when creating an application, so I like to focus on 
+                                    the UI/UX aspects and use Adobe XD to make a mockup first.
+                                </p>
+                                <br>
+                                <p>
+                                    I have a passion for learning and keeping up with the latest trends and 
+                                    technologies used so the apps I create are always the best they can be.
+                                </p>
+                                <br>
+                                <p>
+                                    Languages I've worked with include: 
+                                    <ul class="lang-list">
+                                        <li>Java</li>
+                                        <li>Swift</li>
+                                        <li>Kotlin</li>
+                                        <li>C#</li>
+                                        <li>HTML5, CSS3, JavaScript(Vanilla & JQuery)</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+        </section>
+
+        <!-- SECTION THREE PROJECTS -->
+        <section class="section-three" id="work">
+            <div class="section-three-content">
+                <h1>Recent Work</h1>
+                <div class="project-one">
+                    <div class="project-one-img">
+                        <img src="assets\img\Group 28@2x.png" alt="onlynote" id="img-one">
                         <p>
-                            View the code on GitHub!
+                            Download it <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes" target="_blank">here</a>
                         </p>
-                        <br>
-                        <a href="https://github.com/Tommypurkiss/Onlynote-application" >
-                            <img src="images/GitHub-Mark-64px.png" alt="github link" target="_blank">
-                        </a>
                     </div>
                 </div>
-                <div class="project2">
-                    <div class="project2img">
-                        <img src="images/blank_pixel2.png" alt="" id="newproject">
-                    </div>
-                    <div class="project2info">
-                        <p>
-                            Next project coming soon.
-                        </p>
-                    </div>
+                <div class="project-two">
+                    <div class="div-line"></div>
+                    <h1>
+                        New Projects Coming Soon.
+                    </h1>
+                    <div class="div-line"></div>
+
                 </div>
             </div>
-        </div>
+        </section>
 
 
-        <div class="divContact" id="divContact">
-            <h2 id="contact">Contact Me</h2>
-            <div class="divSocial">
-                <a href="https://github.com/Tommypurkiss" target="_blank">Github</a>
-                <a href="https://www.linkedin.com/in/tommy-purkiss-498a56159/" target="_blank">LinkedIn</a>
-                <a href="https://www.instagram.com/t.dev1/?hl=en" target="_blank">Instagram</a>
-                <a href="mailto:tommypurkissdev@gmail.com">Email</a>
-                <a href="https://play.google.com/store/apps/developer?id=TommyPurkissDev" target="_blank">PlayStore</a>
+        <!-- SECTION FOUR CONTACT -->
+        <section class="section-four" id="contact">
+            <div class="section-four-content">
+                <h1>Contact Me</h1>
+                <div class="social-list">
+                    <a href="https://github.com/Tommypurkiss" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/tommy-purkiss-498a56159/" target="_blank">LinkedIn</a>
+                    <a href="https://www.instagram.com/tommy.dev1/" target="_blank">Instagram</a>
+                    <a href="mailto:tommypurkissdev@gmail.com">Email</a>
+                    <a href="https://play.google.com/store/apps/developer?id=TommyPurkissDev" target="_blank">PlayStore</a>
+                </div>
             </div>
-        </div>
-        </div>
+        </section>
+
     </div>
-</body>
 
+
+</body>
 </html>
+
 
 <!-- MARK: - SPARE CODE 
 
-    <li><a href="#">Home</a></li>
+
+  
 
 -->
