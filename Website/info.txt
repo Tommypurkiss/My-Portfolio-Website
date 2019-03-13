@@ -1,0 +1,3 @@
+
+
+html and css files must be together e.g. css file doesnt need to be in its own css folder.
