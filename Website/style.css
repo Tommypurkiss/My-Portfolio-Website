@@ -149,7 +149,6 @@ section.section-two {
 	margin: auto;
 	font-size: 20px;
 	text-align: center;
-border: 1px solid red;
 }
 .my-skills {
 	height: 300px;
@@ -159,7 +158,6 @@ border: 1px solid red;
 	font-size: 20px;
 	padding: 20px;
 	text-align: center;
-	border: 1px solid red;
 
 }
 .lang-list-div {
@@ -170,7 +168,6 @@ border: 1px solid red;
 	padding: 20px;
 	margin-top: 130px;
 	text-align: center;
-	border: 1px solid red;
 
 }
 
