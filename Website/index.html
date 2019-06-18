@@ -13,13 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 
-    
-
-
     <!-- JQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-
     
     <script text="text/javascript">
 
@@ -27,58 +22,34 @@
     $(window).on('scroll', function(){
         if($(window).scrollTop()) {
             $('nav').addClass('black');
-
         } else {
             $('nav').removeClass('black');
         }
     });
 
-
     // FUNC - For cross browser smooth scrolling
     $(document).ready(function(){
-    // Add smooth scrolling to all links
     $("a").on('click', function(event) {
 
-    // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
-      // Prevent default anchor click behavior
       event.preventDefault();
-
-      // Store hash
       var hash = this.hash;
 
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 500, function(){
 
-        // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    } 
   });
 });
 
 
-    // FUNC - Fade in and out for selected elements on scroll
-    $(window).on("load",function() {
-  $(window).scroll(function() {
-    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
-    $(".fade").each(function() {
-      /* Check the location of each desired element */
-      var objectBottom = $(this).offset().top + $(this).outerHeight();
-      
-      /* If the element is completely within bounds of the window, fade it in */
-      if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-        if ($(this).css("opacity")==0) {$(this).fadeTo(250,1);}
-      } else { //object goes out of view (scrolling up)
-        if ($(this).css("opacity")==1) {$(this).fadeTo(250,0);}
-      }
-    });
-  }).scroll(); //invoke scroll-handler on page-load
-});
-    </script>
+
+ </script>
+
+
 </head>
 
 
@@ -93,15 +64,12 @@
 </script>
 
 
-
-
 <body>
 
     <div class="wrapper">
 
         <!-- Nav bar-->
         <nav>
-            
             <ul>
                 <li class="li-one"><a href="#home">Home</a></li>
                 <li class="li-two"><a href="#about">About</a></li>
@@ -114,13 +82,12 @@
         <section class="section-one" id="home">
             <div class="section-one-content">
                 <p id="p-one">
-                    Hey, I'm Tommy 
+                    Hey, I'm Tommy.
                 </p>
                 <br>
                 <p id="p-two">
-                    and I'm a developer.
+                    I'm a front-end web and mobile developer.
                 </p>
-                
             </div>
         </section>
 
@@ -164,14 +131,13 @@
                                 Here are some of the languages I've worked with which include: 
                             </p>
                             <br>
+                            <p>HTML5, CSS3, JavaScript(Vanilla & JQuery)</p>
                             <p>Java</p>
                             <p>Swift</p>
                             <p>Kotlin</p>
                             <p>C#</p>
-                            <p>HTML5, CSS3, JavaScript(Vanilla & JQuery)</p>
     
                         </div>
-                            
                         </div>
         </section>
 
@@ -179,22 +145,28 @@
         <section class="section-three" id="work">
             <div class="section-three-content">
                 <h1>Recent Work</h1>
-                <div class="project-one">
-                    <div class="project-one-img">
-                        <img src="assets\img\Group 28@2x.png" alt="onlynote" id="img-one">
-                        <p>
-                            Download it <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes" target="_blank">here</a>
-                        </p>
-                    </div>
-                </div>
-                <div class="project-two">
-                    <div class="div-line"></div>
-                    <h1>
-                        New Projects Coming Soon.
-                    </h1>
-                    <div class="div-line"></div>
 
+                <div class="div-projects">
+                    <div class="project-two">
+                        <div class="project-two-img">
+                            <img src="assets\img\Weather-project-img.png" alt="weather" id="img-two">
+                            <p>
+                                Download it <a href="https://play.google.com/store/apps/details?id=com.tommypurkissdev.weather" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="project-one">
+                        <div class="project-one-img">
+                            <img src="assets\img\Onlynote-project-img.png" alt="onlynote" id="img-one">
+                            <p>
+                                Download it <a href="https://play.google.com/store/apps/details?id=tommypurkissdev.simplenotes" target="_blank">here</a>
+                            </p>
+                        </div>
+                    </div>
+                    
                 </div>
+
+
             </div>
         </section>
 
@@ -219,23 +191,3 @@
 </body>
 </html>
 
-
-<!-- MARK: - SPARE CODE 
-
-
-                            <div class="languages-list fade">
-                                <h1>Languages!</h1>
-                                <br>
-                            <p>
-                                Here are some of the languages I've worked with which include: 
-                            </p>
-                            <br>
-                            <p>Java</p>
-                            <p>Swift</p>
-                            <p>Kotlin</p>
-                            <p>C#</p>
-                            <p>HTML5, CSS3, JavaScript(Vanilla & JQuery)</p>
-
-                        </div>
-
--->
